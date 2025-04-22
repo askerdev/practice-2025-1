@@ -1,0 +1,162 @@
+/* project.css */
+/* Специфичные стили для страницы О проекте */
+.about-section {
+  padding: 4rem 1rem;
+}
+
+.about__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about__title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+}
+
+.about__content {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.about__image {
+  width: 325px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about__text {
+  flex: 1;
+}
+
+.about__subtitle {
+  font-size: 1.75rem;
+  color: #2980b9;
+  margin-bottom: 1.5rem;
+}
+
+.about__paragraph {
+  line-height: 1.8;
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+}
+
+/* Технологии */
+.tech-section {
+  padding: 4rem 1rem;
+  background: #f8f9fa;
+}
+
+.tech__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tech__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.tech-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tech-card__title {
+  color: #2980b9;
+  margin-bottom: 1rem;
+}
+
+.tech-card__list {
+  list-style: none;
+  padding: 0;
+}
+
+.tech-card__item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Timeline */
+.timeline-section {
+  padding: 4rem 1rem;
+}
+
+.timeline__container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: #2980b9;
+}
+
+.timeline__item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline__dot {
+  position: absolute;
+  left: -32px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border: 3px solid #2980b9;
+  border-radius: 50%;
+}
+
+.timeline__content {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.timeline__step {
+  color: #2980b9;
+  margin-bottom: 0.5rem;
+}
+
+.timeline__text {
+  color: #7f8c8d;
+  margin-bottom: 0.5rem;
+}
+
+.timeline__date {
+  font-size: 0.9rem;
+  color: #95a5a6;
+}
+
+@media (max-width: 768px) {
+  .about__content {
+    flex-direction: column;
+  }
+
+  .about__image {
+    max-width: 500px;
+  }
+
+  .tech__grid {
+    grid-template-columns: 1fr;
+  }
+}

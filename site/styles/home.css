@@ -1,0 +1,103 @@
+/* styles.css */
+/* Стили специфичные для главной страницы */
+
+/* Hero section */
+.hero {
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.hero__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.hero__title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  color: #7f8c8d;
+  margin-bottom: 2rem;
+}
+
+.hero__image {
+  max-width: 500px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.hero__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* Features */
+.features {
+  padding: 4rem 1rem;
+  background-color: #fff;
+}
+
+.features__grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.feature-card {
+  padding: 2rem;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card__icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card__title {
+  color: #2980b9;
+  margin-bottom: 0.75rem;
+}
+
+.feature-card__text {
+  color: #7f8c8d;
+  line-height: 1.5;
+}
+
+/* Адаптивность для главной страницы */
+@media (max-width: 768px) {
+  .hero__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__text-container {
+    align-items: center;
+  }
+
+  .features__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__image {
+    max-width: 300px;
+  }
+}

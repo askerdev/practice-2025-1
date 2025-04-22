@@ -1,0 +1,118 @@
+/* base.css */
+/* Базовые стили и общие компоненты */
+.page {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #2c3e50;
+}
+
+/* Header */
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+.header__logo-text {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.header__nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.header__nav-link {
+  color: #34495e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header__nav-link:hover {
+  color: #2980b9;
+}
+
+/* Footer */
+.footer {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 3rem 1rem;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer__section {
+  flex: 1;
+}
+
+.footer__title {
+  color: #ecf0f1;
+  margin-bottom: 1rem;
+}
+
+.footer__link {
+  display: block;
+  color: #bdc3c7;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+/* Utilities */
+.button {
+  width: max-content;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.button--primary {
+  background-color: #2980b9;
+  color: white;
+}
+
+.button--primary:hover {
+  background-color: #2471a3;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer__container {
+    flex-direction: column;
+  }
+}

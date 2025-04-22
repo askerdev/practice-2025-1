@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О проекте - Ментор МГПУ</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/project.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__container">
+        <a href="/" class="header__logo">
+          <span class="header__logo-text">Ментор МГПУ</span>
+        </a>
+        <nav class="header__nav">
+          <a href="#about-project" class="header__nav-link">О проекте</a>
+          <a href="#journal" class="header__nav-link">Журнал</a>
+          <a href="#resources" class="header__nav-link">Ресурсы</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="about-section">
+        <div class="about__container">
+          <h1 class="about__title">О проекте Ментор МГПУ</h1>
+
+          <div class="about__content">
+            <div class="about__image-container">
+              <img
+                src="assets/project.webp"
+                alt="О проекте"
+                class="about__image"
+              />
+            </div>
+            <div class="about__text">
+              <h2 class="about__subtitle">Цели проекта</h2>
+              <p class="about__paragraph">
+                Создание интеллектуального ассистента для поддержки
+                преподавателей в их ежедневной работе. Система помогает в
+                решении педагогических задач, предоставляет методические
+                рекомендации и анализирует учебные кейсы.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tech-section">
+        <div class="tech__container">
+          <h2 class="tech__title section-title">Технологии проекта</h2>
+          <div class="tech__grid">
+            <div class="tech-card">
+              <h3 class="tech-card__title">Backend</h3>
+              <ul class="tech-card__list">
+                <li class="tech-card__item">Node.js + TypeScript</li>
+                <li class="tech-card__item">PostgreSQL + pgvector</li>
+                <li class="tech-card__item">Ollama AI модели</li>
+              </ul>
+            </div>
+
+            <div class="tech-card">
+              <h3 class="tech-card__title">Frontend</h3>
+              <ul class="tech-card__list">
+                <li class="tech-card__item">React + TypeScript</li>
+                <li class="tech-card__item">Gravity UI Kit</li>
+                <li class="tech-card__item">CSS Modules</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="timeline-section">
+        <div class="timeline__container">
+          <h2 class="timeline__title section-title">Этапы разработки</h2>
+          <div class="timeline">
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3 class="timeline__step">Исследовательская фаза</h3>
+                <p class="timeline__text">
+                  Анализ потребностей преподавателей, сравнение LLM-провайдеров
+                </p>
+                <span class="timeline__date">Февраль - Март 2025</span>
+              </div>
+            </div>
+
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3 class="timeline__step">Прототипирование</h3>
+                <p class="timeline__text">
+                  Разработка архитектуры системы, выбор технологического стека
+                </p>
+                <span class="timeline__date">Арпель 2025</span>
+              </div>
+            </div>
+
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3 class="timeline__step">MVP</h3>
+                <p class="timeline__text">
+                  Реализация MVP проекта, первые впечатления
+                </p>
+                <span class="timeline__date">Арпель - Май 2025</span>
+              </div>
+            </div>
+
+            <div class="timeline__item">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3 class="timeline__step">Обратная связь</h3>
+                <p class="timeline__text">
+                  Сбор обратной связи и исправление недочётов, добавление новых
+                  фич
+                </p>
+                <span class="timeline__date">Сентябрь - Декабрь 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div class="footer__container">
+        <div class="footer__section">
+          <h4 class="footer__title">МГПУ</h4>
+          <p class="footer__text">
+            Московский городской педагогический университет
+          </p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Контакты</h4>
+          <a href="mailto:mentor@mgpu.ru" class="footer__link"
+            >mentor@mgpu.ru</a
+          >
+          <a href="tel:+74951234567" class="footer__link">+7 (495) 123-45-67</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
