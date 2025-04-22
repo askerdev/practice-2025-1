@@ -45,7 +45,3 @@ git commit -m "feat(docs): added project documentation"
 
 - Hosting: `Github Pages`
 - HTML, CSS, BEM
-
-```
-
-```
