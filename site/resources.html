@@ -1,0 +1,130 @@
+<!-- resources.html -->
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ресурсы - Ментор МГПУ</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/resources.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__container">
+        <a href="/" class="header__logo">
+          <span class="header__logo-text">Ментор МГПУ</span>
+        </a>
+        <nav class="header__nav">
+          <a href="/project" class="header__nav-link">О проекте</a>
+          <a href="/journal" class="header__nav-link">Журнал</a>
+          <a href="/resources" class="header__nav-link">Ресурсы</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="resources-section">
+        <div class="resources__container">
+          <h1 class="section-title">Полезные ресурсы</h1>
+
+          <!-- Официальные ресурсы -->
+          <div class="resource-category">
+            <h2 class="category-title">Официальные ресурсы</h2>
+            <div class="resource-grid">
+              <a
+                href="https://www.mgpu.ru/"
+                target="_blank"
+                class="resource-card"
+              >
+                <div class="resource-icon">🏛️</div>
+                <h3 class="resource-title">МГПУ Официальный сайт</h3>
+                <p class="resource-description">
+                  Сайт Московского городского педагогического университета
+                </p>
+              </a>
+
+              <a
+                href="https://mentor.mgpu.ru/"
+                target="_blank"
+                class="resource-card"
+              >
+                <div class="resource-icon">🤖</div>
+                <h3 class="resource-title">Ментор МГПУ</h3>
+                <p class="resource-description">
+                  Сайт для помощи преподавателем, где сейчас работают менторы
+                  (люди) для преподавателей
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <!-- Техническая документация -->
+          <div class="resource-category">
+            <h2 class="category-title">Технические материалы</h2>
+            <div class="resource-grid">
+              <a
+                href="https://github.com/pgvector/pgvector"
+                target="_blank"
+                class="resource-card"
+              >
+                <div class="resource-icon">📊</div>
+                <h3 class="resource-title">pgvector</h3>
+                <p class="resource-description">
+                  Расширение PostgreSQL для работы с векторными данными
+                </p>
+              </a>
+            </div>
+          </div>
+
+          <!-- Статьи -->
+          <div class="resource-category">
+            <h2 class="category-title">Образовательные материалы</h2>
+            <div class="resource-grid">
+              <a
+                href="https://habr.com/ru/articles/893650/"
+                target="_blank"
+                class="resource-card"
+              >
+                <div class="resource-icon">📚</div>
+                <h3 class="resource-title">RAG на Хабре</h3>
+                <p class="resource-description">
+                  Подробное руководство по Retrieval-Augmented Generation
+                </p>
+              </a>
+
+              <a
+                href="https://dzen.ru/a/Zg0UW-ZrOUGZ0-00"
+                target="_blank"
+                class="resource-card"
+              >
+                <div class="resource-icon">🔍</div>
+                <h3 class="resource-title">RAG в образовании</h3>
+                <p class="resource-description">
+                  Практическое применение RAG-архитектуры
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div class="footer__container">
+        <div class="footer__section">
+          <h4 class="footer__title">МГПУ</h4>
+          <p class="footer__text">
+            Московский городской педагогический университет
+          </p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Контакты</h4>
+          <a href="mailto:mentor@mgpu.ru" class="footer__link"
+            >mentor@mgpu.ru</a
+          >
+          <a href="tel:+74951234567" class="footer__link">+7 (495) 123-45-67</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
