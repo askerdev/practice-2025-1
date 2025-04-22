@@ -1,5 +1,11 @@
 # Документация по проектной практике
 
+## Best practices, который использует проект
+
+- [Конвенция названия коммитов](https://www.conventionalcommits.org/en/v1.0.0/)
+- [Введение документации в формате Markdown](https://ru.wikipedia.org/wiki/Markdown)
+- [Методология BEM](https://ru.bem.info/methodology/css/)
+
 ## Этапы разработки
 
 ### 1. Клонирование репозитория и добавления Документация
