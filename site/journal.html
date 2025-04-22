@@ -1,0 +1,151 @@
+<!-- journal.html -->
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Журнал проекта - Ментор МГПУ</title>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/journal.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__container">
+        <a href="/" class="header__logo">
+          <span class="header__logo-text">Ментор МГПУ</span>
+        </a>
+        <nav class="header__nav">
+          <a href="/project" class="header__nav-link">О проекте</a>
+          <a href="/journal" class="header__nav-link">Журнал</a>
+          <a href="#resources" class="header__nav-link">Ресурсы</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="journal-section">
+        <div class="journal__container">
+          <!-- Пост 2 - Технологический стек -->
+          <article class="blog-post">
+            <div class="post-header">
+              <h1 class="post-title">Архитектурные решения проекта</h1>
+              <time class="post-date" datetime="2025-04-15"
+                >15 апреля 2025</time
+              >
+            </div>
+
+            <div class="post-content">
+              <h3>Почему RAG вместо дообучения модели?</h3>
+              <ul class="post-list">
+                <li>Экономия вычислительных ресурсов</li>
+                <li>Возможность обновления знаний без переобучения</li>
+                <li>
+                  Соответствие требованиям GDPR для работы с персональными
+                  данными
+                </li>
+              </ul>
+
+              <h3>Выбор технологий:</h3>
+              <div class="tech-grid">
+                <div class="tech-card">
+                  <h4>PostgreSQL + pgvector</h4>
+                  <p>
+                    Хранение векторных embeddings с возможностью быстрого поиска
+                  </p>
+                </div>
+                <div class="tech-card">
+                  <h4>Ollama модели</h4>
+                  <p>Локальное исполнение для соблюдения безопасности данных</p>
+                </div>
+              </div>
+
+              <h3>Ключевые архитектурные решения:</h3>
+              <pre class="code-block">
+<code>
+interface LLMProvider {
+  generate(prompt: string, context: string[]): Promise<string>;
+  embed(text: string): Promise<number[]>;
+}
+</code>
+</pre>
+
+              <p>Реализация PWA позволила:</p>
+              <ul class="post-list">
+                <li>Единая кодовая база для всех платформ</li>
+                <li>Оффлайн-работа с кешированием данных</li>
+                <li>Нативная интеграция с мобильными устройствами</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Пост 1 - Аттестация -->
+          <article class="blog-post">
+            <div class="post-header">
+              <h1 class="post-title">Первая аттестация проекта</h1>
+              <time class="post-date" datetime="2025-03-01">1 марта 2025</time>
+            </div>
+
+            <div class="post-content">
+              <h3>Ключевые достижения этапа:</h3>
+              <ul class="post-list">
+                <li>
+                  Проведен анализ текущей ситуации в образовательном процессе
+                  МГПУ
+                </li>
+                <li>Сформирована карта стейкхолдеров проекта</li>
+                <li>
+                  Определены основные боли преподавателей:
+                  <ul class="post-sublist">
+                    <li>
+                      Недостаток практического опыта у молодых специалистов
+                    </li>
+                    <li>Отсутствие единой методической платформы</li>
+                    <li>Сложности адаптации к цифровой среде</li>
+                  </ul>
+                </li>
+                <li>Разработана дорожная карта проекта</li>
+                <li>Создана первая версия диаграммы Ганта</li>
+              </ul>
+
+              <h3>Структура работы:</h3>
+              <div class="timeline">
+                <div class="timeline__item">
+                  <div class="timeline__dot"></div>
+                  <div class="timeline__content">
+                    <h4>1. Анализ текущей ситуации</h4>
+                    <p>Интервью с 12 преподавателями, сбор кейсов</p>
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <div class="timeline__dot"></div>
+                  <div class="timeline__content">
+                    <h4>2. Взаимодействие с заказчиком</h4>
+                    <p>Согласование технического задания и требований</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div class="footer__container">
+        <div class="footer__section">
+          <h4 class="footer__title">МГПУ</h4>
+          <p class="footer__text">
+            Московский городской педагогический университет
+          </p>
+        </div>
+        <div class="footer__section">
+          <h4 class="footer__title">Контакты</h4>
+          <a href="mailto:mentor@mgpu.ru" class="footer__link"
+            >mentor@mgpu.ru</a
+          >
+          <a href="tel:+74951234567" class="footer__link">+7 (495) 123-45-67</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
