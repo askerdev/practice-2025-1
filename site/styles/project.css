@@ -2,6 +2,9 @@
 /* Специфичные стили для страницы О проекте */
 .about-section {
   padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about__container {
@@ -43,6 +46,13 @@
   line-height: 1.8;
   color: #7f8c8d;
   margin-bottom: 1.5rem;
+}
+
+.about__video {
+  width: 80%;
+  border: 1px solid #7f8c8d;
+  border-radius: 24px;
+  margin: 0 auto;
 }
 
 /* Технологии */
