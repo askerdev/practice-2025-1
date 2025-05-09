@@ -12,8 +12,12 @@
 
 ### Backend
 
-- **Node.js** + **TypeScript** (основная платформа)
-- **PostgreSQL** с расширением `pgvector` для работы с векторными данными
+- **Python** (основная платформа)
+- **ChromaDB** для работы с векторными данными
+- **SQLite** для хранения данных
+- **FastAPI** библиотека для http серверов
+- **SQLModel** ORM
+- **LangChain** модульный фреймворк для создания приложений с использованием больших языковых моделей (LLM)
 - **Ollama** модели для embeddings и генерации текста (gemma, ...)
 
 ### Frontend
@@ -38,26 +42,7 @@
 
 1. **LLM-агностичность**:
 
-```typescript
-interface LLMProvider {
-  generate(prompt: string, context: string[]): Promise<string>;
-  embed(text: string): Promise<number[]>;
-}
-
-class OllamaAdapter implements LLMProvider { ... }
-```
-
 2. **Векторный поиск**:
-
-```sql
-CREATE TABLE document_embeddings (
-  id SERIAL PRIMARY KEY,
-  content TEXT,
-  embedding VECTOR(384)
-);
-
-CREATE INDEX ON document_embeddings USING ivfflat (embedding);
-```
 
 ## Этапы разработки
 
@@ -70,8 +55,10 @@ CREATE INDEX ON document_embeddings USING ivfflat (embedding);
 ### 2. Реализация
 
 - Настройка CI/CD pipeline
-- Интеграция VK ID для авторизации
+- Интеграция VK ID для авторизация
 - Реализация RAG-цепочки:
+
+Пример кода на typescript
 
 ```typescript
 async function retrieveAndGenerate(query: string) {
